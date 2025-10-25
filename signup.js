@@ -13,6 +13,7 @@ let sign = () =>{
     // Signed in 
     var user = userCredential.user;
     alert("user registered successfully ...!")
+     window.location.href = "./landing.html";
   })
   .catch((error) => {
     var errorCode = error.code;

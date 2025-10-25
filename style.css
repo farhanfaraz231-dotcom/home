@@ -1,22 +1,196 @@
-
-
 .container{
     display: flex;
     flex-direction: column;
+    margin: 50px auto;
     width: 50%;
     gap: 20px;
-    margin: 50px auto;
 }
 .container input{
     padding: 15px;
-    outline: none;
     border-radius: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+  
 }
 .container button{
     padding: 15px;
     border-radius: 10px;
-    background-color: rgb(79, 33, 135);
-    color: white;
     border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
+}
+/*  */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --maincolor : #00C07C;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+.loginmaindiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    /* justify-content: space-between; */
+    padding: 6rem;
+}
+
+.line{
+    text-align: end;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+}
+
+.line span{
+    color: var(--maincolor);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.line span a{
+    text-decoration: none;
+    color: var(--maincolor);
+    margin-left: 1rem;
+}
+
+
+.leftside{
+    width: 50%;
+}
+
+.leftside img{
+    height: 30vw;
+    width: 30vw;
+}
+
+.leftside p{
+    padding-block: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.leftside h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.leftside span{ 
+    color: var(--maincolor);
+}
+
+
+.rightside{
+    width: 40%;
+   background-color: rgb(246, 249, 251);
+   padding-block: 2rem;
+   padding-inline: 2rem;
+}
+
+.rightside h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.rightside p{
+    font-size: 1.6rem;
+    padding-block: 1.4rem;
+}
+
+.rightside input{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+   
+}
+
+
+.rightside button{
+    background-color: var(--maincolor);
+    color: #fff;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.rightside h4{
+    text-align: center;
+    padding-block: 2rem;
+}
+
+.googlebtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid var(--maincolor);
+
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    cursor: pointer;
+}
+
+.googlebtn:hover{
+    background-color: var(--maincolor);
+    color: #fff;
+}
+
+
+@media screen  and (max-width:800px) {
+    .rightside{
+        width: 100%;
+    }
+    .leftside {
+    width: 100%;
+    text-align: center;
+}
+
+
+}
+
+@media screen  and (max-width:450px) {
+ .loginmaindiv {
+    padding: 1rem;
+ }
+ .leftside img{
+    height: 50vw;
+    width: 50vw;
+}
+
 }

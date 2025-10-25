@@ -20,6 +20,7 @@ let landing = () => {
 
         user.set(obj)
         alert(" registered successfully");``
+         window.location.href = "./login.html";
 
 
 
